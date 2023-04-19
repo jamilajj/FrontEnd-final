@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .container {
+  max-width: 1500px;
+}
+
+header .container .header_section1 {
+  padding: 2rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .header_section1 .top_menu ul li a {
+  font-size: 20px;
+}
+
+header .container .header_section1 form {
+  position: relative;
+}
+
+header .container .header_section1 form label i {
+  position: absolute;
+  bottom: 30%;
+  left: 9px;
+}
+
+header .container .header_section1 form label .inp:focus {
+  border: 2px solid black;
+}
+
+header .container .header_section1 form label .inp {
+  background-color: whitesmoke;
+  width: 500px;
+  height: 53px;
+  border-radius: 6px;
+}
+
+header .container .header_section1 .top_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .header_section1 .top_menu ul {
+  margin-bottom: 0%;
+}
+
+header .container .header_section1 .top_menu ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+header .container .header_section1 .top_menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container .header_section1 .wishlist_basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .header_section1 .wishlist_basket .wishlist_logo {
+  padding: 0 15px;
+}
+
+header .container .header_section1 .wishlist_basket .wishlist_logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container .header_section1 .wishlist_basket .wishlist_logo a i {
+  font-size: 20px;
+}
+
+header .container .header_section1 .wishlist_basket .wishlist_logo a i span {
+  font-size: 13px;
+}
+
+header .container .header_section1 .wishlist_basket .basket_logo {
+  padding: 0 15px;
+}
+
+header .container .header_section1 .wishlist_basket .basket_logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container .header_section1 .wishlist_basket .basket_logo a i {
+  font-size: 20px;
+}
+
+header .container .header_section1 .wishlist_basket .basket_logo a i span {
+  font-size: 13px;
+}
+
+header .container .header_hr_container {
+  width: 100%;
+}
+/*# sourceMappingURL=main.style.css.map */
