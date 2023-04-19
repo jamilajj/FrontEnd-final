@@ -5,13 +5,15 @@
 }
 
 header {
-  .container {
+   .header_section1 {
     max-width: 1500px;
-    .header_section1 {
+
+    .container{
       padding: 2rem 0 0 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .top_menu {
         ul {
           li {
@@ -21,17 +23,21 @@ header {
           }
         }
       }
+
       form {
         position: relative;
+
         label {
           i {
             position: absolute;
             bottom: 30%;
             left: 9px;
           }
+
           .inp:focus {
             border: 2px solid black;
           }
+
           .inp {
             background-color: whitesmoke;
             width: 500px;
@@ -45,11 +51,14 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         ul {
           margin-bottom: 0%;
+
           li {
             display: inline;
             margin-left: 15px;
+
             a {
               text-decoration: none;
               color: black;
@@ -57,28 +66,37 @@ header {
           }
         }
       }
+
       .wishlist_basket {
         display: flex;
+
         .wishlist_logo {
           padding: 0 15px;
+
           a {
             text-decoration: none;
             color: black;
+
             i {
               font-size: 20px;
+
               span {
                 font-size: 13px;
               }
             }
           }
         }
+
         .basket_logo {
           padding: 0 15px;
+
           a {
             text-decoration: none;
             color: black;
+
             i {
               font-size: 20px;
+
               span {
                 font-size: 13px;
               }
@@ -87,73 +105,95 @@ header {
         }
       }
     }
-    .header_hr_container {
-      width: 100%;
-    }
-    .header_section2 {
-      .row{
-        align-items: center;
-        justify-content: space-between;
-      }
-      .all_categories_btn {
-        button {
-          width: 160px;
-          height: 45px;
-          background-color: black;
-          border-radius: 6px;
-          span {
-            color: #ffffff;
-          }
-        }
-      }
-      .all_categories_list {
-        width: 220px;
-        background-color: aqua;
-        li {
-          list-style: none;
-          padding: 5px 0;
-          a {
-            text-decoration: none;
-            i {
-              color: black;
+  }
+  .header_hr_container {
+    width: 100%;
+  }
+
+  .header_section2 {
+    .row {
+      .col-6 {
+        .row {
+          .col-lg-4 {
+            .all_categories_btn {
+              button {
+                width: 160px;
+                height: 45px;
+                background-color: black;
+                border-radius: 6px;
+
+                span {
+                  color: #ffffff;
+                }
+              }
             }
-            span {
-              color: black;
+
+            .all_categories_list {
+              width: 220px;
+              background-color: aqua;
+
+              li {
+                list-style: none;
+                padding: 5px 0;
+
+                a {
+                  text-decoration: none;
+
+                  i {
+                    color: black;
+                  }
+
+                  span {
+                    color: black;
+                  }
+                }
+              }
+            }
+
+
+            .menu {
+              display: flex;
+
+              ul {
+                display: flex;
+
+                // align-items: center;
+                // justify-content: center;
+                li {
+                  display: flex;
+                  list-style: none;
+                  padding: 15px;
+                  font-size: 17px;
+
+                  a {
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
+              }
             }
           }
         }
       }
-      .menu {
-        display: flex;
-        ul {
-          display: flex;
-          // align-items: center;
-          // justify-content: center;
-          li {
-            display: flex;
-            list-style: none;
-            padding: 15px;
-            font-size: 17px;
-           a{
-             text-decoration: none;
-             color: black;
-           }
-          }
-        }
-      }
-      .login{
-        button{
+
+      .login {
+        .btn {
           width: 70px;
           height: 40px;
           background-color: #ffffff;
           border: 0;
-          a{
+
+          a {
             text-decoration: none;
             color: black;
             font-size: 2px;
           }
         }
       }
+
+      // align-items: center;
+      // justify-content: space-between;
     }
+
   }
 }
