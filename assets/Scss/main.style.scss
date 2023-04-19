@@ -13,7 +13,6 @@ header {
       justify-content: space-between;
       align-items: center;
       .top_menu {
-      
         ul {
           li {
             a {
@@ -88,8 +87,73 @@ header {
         }
       }
     }
-    .header_hr_container{
-        width: 100%;
+    .header_hr_container {
+      width: 100%;
+    }
+    .header_section2 {
+      .row{
+        align-items: center;
+        justify-content: space-between;
+      }
+      .all_categories_btn {
+        button {
+          width: 160px;
+          height: 45px;
+          background-color: black;
+          border-radius: 6px;
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+      .all_categories_list {
+        width: 220px;
+        background-color: aqua;
+        li {
+          list-style: none;
+          padding: 5px 0;
+          a {
+            text-decoration: none;
+            i {
+              color: black;
+            }
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+      .menu {
+        display: flex;
+        ul {
+          display: flex;
+          // align-items: center;
+          // justify-content: center;
+          li {
+            display: flex;
+            list-style: none;
+            padding: 15px;
+            font-size: 17px;
+           a{
+             text-decoration: none;
+             color: black;
+           }
+          }
+        }
+      }
+      .login{
+        button{
+          width: 70px;
+          height: 40px;
+          background-color: #ffffff;
+          border: 0;
+          a{
+            text-decoration: none;
+            color: black;
+            font-size: 2px;
+          }
+        }
+      }
     }
   }
 }

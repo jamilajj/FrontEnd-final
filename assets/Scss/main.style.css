@@ -116,4 +116,85 @@ header .container .header_section1 .wishlist_basket .basket_logo a i span {
 header .container .header_hr_container {
   width: 100%;
 }
+
+header .container .header_section2 .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .header_section2 .all_categories_btn button {
+  width: 160px;
+  height: 45px;
+  background-color: black;
+  border-radius: 6px;
+}
+
+header .container .header_section2 .all_categories_btn button span {
+  color: #ffffff;
+}
+
+header .container .header_section2 .all_categories_list {
+  width: 220px;
+  background-color: aqua;
+}
+
+header .container .header_section2 .all_categories_list li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+header .container .header_section2 .all_categories_list li a {
+  text-decoration: none;
+}
+
+header .container .header_section2 .all_categories_list li a i {
+  color: black;
+}
+
+header .container .header_section2 .all_categories_list li a span {
+  color: black;
+}
+
+header .container .header_section2 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .header_section2 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .header_section2 .menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 15px;
+  font-size: 17px;
+}
+
+header .container .header_section2 .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container .header_section2 .login button {
+  width: 70px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 0;
+}
+
+header .container .header_section2 .login button a {
+  text-decoration: none;
+  color: black;
+  font-size: 2px;
+}
 /*# sourceMappingURL=main.style.css.map */
