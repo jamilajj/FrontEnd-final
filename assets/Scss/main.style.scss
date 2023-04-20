@@ -5,10 +5,10 @@
 }
 
 header {
-   .header_section1 {
+  .header_section1 {
     max-width: 1500px;
 
-    .container{
+    .container {
       padding: 2rem 0 0 0;
       display: flex;
       justify-content: space-between;
@@ -115,6 +115,11 @@ header {
       .col-6 {
         .row {
           .col-lg-4 {
+            button:hover {
+              .all_categories_list {
+                display: block;
+              }
+            }
             .all_categories_btn {
               button {
                 width: 160px;
@@ -129,9 +134,10 @@ header {
             }
 
             .all_categories_list {
+              display: none;
               width: 220px;
               background-color: aqua;
-
+              display: none;
               li {
                 list-style: none;
                 padding: 5px 0;
@@ -149,27 +155,35 @@ header {
                 }
               }
             }
+          }
+        }
 
+        .menu {
+          display: flex;
 
-            .menu {
-              display: flex;
+          // align-items: center;
+          // justify-content: center;
+          li {
+            position: relative;
+            display: flex;
+            list-style: none;
+            padding: 15px;
+            font-size: 17px;
+            transition: 0.3s;
+            ul {
+              position: absolute;
+              display: none;
+              height: 0;
+            }
+            a {
+              text-decoration: none;
+              color: black;
+            }
 
+            &:hover {
               ul {
-                display: flex;
-
-                // align-items: center;
-                // justify-content: center;
-                li {
-                  display: flex;
-                  list-style: none;
-                  padding: 15px;
-                  font-size: 17px;
-
-                  a {
-                    text-decoration: none;
-                    color: black;
-                  }
-                }
+                display: block;
+                max-height: 200px;
               }
             }
           }
@@ -190,10 +204,40 @@ header {
           }
         }
       }
-
-      // align-items: center;
-      // justify-content: space-between;
     }
-
   }
+}
+#section1 {
+  overflow: hidden;
+  .first_section_slider {
+    img {
+      width: 100%;
+    }
+  }
+}
+#section2 {
+  background-color: bisque;
+  .slider {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    .parent-slide {
+      padding: 15px;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.slider{
+  width:100% !important;
+  margin:20px auto;
+  text-align: center;
+  padding:20px;
+  color:white;
+  .parent-slide{padding:15px;}
+  img{display: block;margin:auto;}
 }
