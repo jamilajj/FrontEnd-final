@@ -64,3 +64,13 @@ window.onload=function(){
     });
   };
   
+  	 
+	
+$(function () {
+    $('.toggle-menu').click(function(){
+       $('.exo-menu').toggleClass('display');
+       
+    });
+    
+   });
+   
