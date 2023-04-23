@@ -92,17 +92,20 @@ header .header_hr_container {
 #section2 {
   background-color: bisque;
 }
-#section2 .slider {
+#section2 .container {
+  max-width: 1600px;
+}
+#section2 .container .slider {
   width: 400px;
   margin: 20px auto;
   text-align: center;
   padding: 20px;
   color: white;
 }
-#section2 .slider .parent-slide {
+#section2 .container .slider .parent-slide {
   padding: 15px;
 }
-#section2 .slider img {
+#section2 .container .slider img {
   display: block;
   margin: auto;
 }
@@ -117,7 +120,8 @@ header .header_hr_container {
 .slider .parent-slide {
   padding: 15px;
 }
-.slider img {
-  display: block;
-  margin: auto;
+
+#section3 {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.style.css.map */

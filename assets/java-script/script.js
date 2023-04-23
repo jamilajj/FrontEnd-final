@@ -48,29 +48,30 @@ $(function () {
             }
         ]
     });
-   
-   
+
+
 })
-window.onload=function(){
+window.onload = function () {
     $('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:1500,
-    arrows:true,
-    prevArrow:'<button type="button" class="slick-prev"></button>',
-    nextArrow:'<button type="button" class="slick-next"></button>',
-    centerMode:true,
-    slidesToShow:3,
-    slidesToScroll:1
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
     });
-  };
-  
-  	 
-	
+};
+
+
+
 $(function () {
-    $('.toggle-menu').click(function(){
-       $('.exo-menu').toggleClass('display');
-       
+    $('.toggle-menu').click(function () {
+        $('.exo-menu').toggleClass('display');
+
     });
-    
-   });
-   
+
+});
+
+

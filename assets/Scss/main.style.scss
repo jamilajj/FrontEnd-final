@@ -112,7 +112,7 @@ header {
   }
 
 
- 
+
   // #navbar {
   //   .container {
   //     display: flex;
@@ -139,12 +139,12 @@ header {
   //               visibility: visible;
   //               transition: all 2s;
   //             }
-             
+
   //           }
   //         }
   //       }
-       
-       
+
+
 
   //       .dropDown {
   //         background-color: #910e0e;
@@ -349,20 +349,26 @@ header {
 #section2 {
   background-color: bisque;
 
-  .slider {
-    width: 400px;
-    margin: 20px auto;
-    text-align: center;
-    padding: 20px;
-    color: white;
+  .container {
+   max-width: 1600px;
+    .slider {
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px;
+      color: white;
 
-    .parent-slide {
-      padding: 15px;
-    }
 
-    img {
-      display: block;
-      margin: auto;
+
+      .parent-slide {
+        padding: 15px;
+      }
+
+      img {
+        // width: 273px;
+        display: block;
+        margin: auto;
+      }
     }
   }
 }
@@ -377,9 +383,15 @@ header {
   .parent-slide {
     padding: 15px;
   }
-
-  img {
-    display: block;
-    margin: auto;
-  }
+}
+#section3{
+  // .container{
+    
+      display: flex;
+    justify-content: space-between;
+    
+ 
+  
+  // align-items: center;
+  // justify-content: space-between;
 }
