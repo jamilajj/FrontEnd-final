@@ -59,11 +59,11 @@ a:focus {
 }
 
 .exo-menu {
+    z-index: 99999;
     width: 200px;
     float: left;
     list-style: none;
     position: relative;
-    background: #ffffff;
 }
 
 .exo-menu>li {
@@ -312,3 +312,4 @@ yazdiqim */
     width: 100%;
     background: blue;
 }
+

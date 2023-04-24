@@ -1,25 +1,19 @@
 // console.log("salam");
 
-// let btn = document.querySelector(".all_categories_btn");
-// let ddd = document.querySelector(".all_categories_list");
-// let list= document.querySelector(".header_section2");
-// btn.addEventListener("mouseover", function(){
-//     ddd.classList.remove("d-none");
-// })
 
-// list.addEventListener("mouseout", function(){
-//     ddd.classList.add("d-none");
-// })
-// let hov_li=document.querySelectorAll(".all_categories_btn.li");
-// hov_li.addEventListener("mouseover",function(){
-//     hov_li.classList.add(" background-color: blueviolet;");
-// })
+$(document).ready(function () {
 
-// $(document).ready(function(){
-//     $(".all_categories_btn button").click(function(){
-//       $(".all_categories_list").slideToggle("slow");
-//     });
-//   });
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+    })
+
+})
 
 $(function () {
 
@@ -67,11 +61,107 @@ window.onload = function () {
 
 
 $(function () {
+    $('.section11_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+                      
+
     $('.toggle-menu').click(function () {
         $('.exo-menu').toggleClass('display');
 
     });
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+                      
+
+    
+$('.5_section_slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 7,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
 
 });
+
+// section4 slider cardlarin
+const tabLink = document.querySelectorAll(".tab-menu-link");
+const tabContent = document.querySelectorAll(".tab-bar-content");
+
+tabLink.forEach((item) => {
+    item.addEventListener("click", activeTab);
+});
+
+function activeTab(item) {
+    const btnTarget = item.currentTarget;
+    const content = btnTarget.dataset.content;
+
+    tabContent.forEach((item) => {
+        item.classList.remove("is-active");
+    });
+
+    tabLink.forEach((item) => {
+        item.classList.remove("is-active");
+    });
+
+    document.querySelector("#" + content).classList.add("is-active");
+    btnTarget.classList.add("is-active");
+}
+
 
 

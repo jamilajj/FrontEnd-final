@@ -17,16 +17,19 @@
 
     --label-index: #000000;
     --danger-index: #5bc257;
-/* PAGINATE */
+
+
+
+
     --link-color: #000;
     --link-color-hover: #fff;
     --bg-content-color: #ffcc00;
 
 }
 
-.container-fluid {
-    max-width: 1400px;
-
+.container {
+    max-width: 1600px !important;
+    margin: auto
 }
 
 .card {
@@ -45,7 +48,7 @@
 
 
 .card h5 {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 55px;
     font-weight: 300;
     font-size: 1rem;
@@ -58,10 +61,7 @@
 
 .card-img-top {
     width: 100%;
-    min-height: 250px;
-    max-height: 250px;
     object-fit: contain;
-    padding: 30px;
 }
 
 .card h2 {
@@ -71,7 +71,7 @@
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(252, 117, 117, 0.06);
 }
 
 /* Centered text */
@@ -145,5 +145,25 @@
     }
 }
 
+.cemile{
+    position: relative;
+}
+
+.label-top{
+    top: 5%;
+    position: absolute;
+}
 
 
+
+/* section4 card slider */
+
+
+/* .content_card{
+    width: 276px;
+
+} */
+
+.trending-cards{
+    width: 350px
+}
