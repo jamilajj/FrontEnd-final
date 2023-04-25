@@ -145,7 +145,7 @@
     }
 }
 
-.cemile{
+.mini_btn{
     position: relative;
 }
 
@@ -165,5 +165,6 @@
 } */
 
 .trending-cards{
-    width: 350px
+    width: 350px;
+    margin-bottom: 30px;
 }
