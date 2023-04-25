@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 h3 {
   padding-top: 20px;
 }
@@ -16,6 +17,7 @@ header {
 
       .row {
         align-items: center;
+
         .top_menu {
           ul {
             li {
@@ -129,12 +131,14 @@ header {
 
   .container {
     max-width: 1600px;
+
     .slider {
       width: 400px;
       margin: 20px auto;
       text-align: center;
       padding: 20px;
       color: #000;
+
       .slick-prev:before,
       .slick-next:before {
         font-size: 49px;
@@ -166,19 +170,23 @@ header {
     padding: 15px;
   }
 }
+
 #section3 {
   .container {
     justify-content: space-between;
   }
+
   div {
     display: flex;
 
     flex-wrap: nowrap;
+
     img {
       width: 750px;
     }
   }
 }
+
 // Section4==============================================================================
 $color-white: #ffffff;
 $color-light: #f4f4f4;
@@ -309,6 +317,7 @@ body {
     }
   }
 }
+
 .section5 {
   .section5_slider {
     background-color: #004743;
@@ -324,14 +333,17 @@ body {
     }
   }
 }
+
 .section6 {
   .card {
     margin: 0 30px;
   }
+
   .card img:hover {
     size: 20px;
   }
 }
+
 .section7 {
   a {
     img {
@@ -339,6 +351,7 @@ body {
     }
   }
 }
+
 .section9 {
   a {
     img {
@@ -346,9 +359,11 @@ body {
     }
   }
 }
+
 .section10 {
   .d-flex {
     justify-content: space-between;
+
     .section10_hover {
       overflow: hidden;
       position: relative;
@@ -363,12 +378,15 @@ body {
       object-fit: contain;
       height: 600px;
       border-radius: 23px;
+
       &:hover {
         opacity: 0.9;
       }
     }
+
     .view {
       opacity: 0;
+
       p {
         background-color: #292929;
         color: white;
@@ -383,6 +401,7 @@ body {
         padding-top: 19px;
         transition: all 0.5s;
       }
+
       &:hover {
         p {
           background: white;
@@ -392,8 +411,219 @@ body {
     }
   }
 }
+
 .section11 {
   .card {
-    margin: 0 25px;
+    margin: 20px 15px;
+  }
+}
+
+.section12 {
+  img {
+    height: 450px;
+    margin: 20px 0;
+    width: 1525px;
+  }
+}
+
+.section15 {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    form {
+      display: flex;
+
+      button {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 129px;
+        height: 56px;
+        background-color: #000;
+        color: white;
+      }
+
+      .email_inp {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 56px;
+        width: 407px;
+      }
+    }
+  }
+
+
+}
+footer {
+  background-color: #ffffff;
+  padding: 80px 0 50px 0;
+
+  .footer-content-one {
+      display: flex;
+      gap: 85px;
+
+      .share-content-one {
+          display: flex;
+          flex-direction: column;
+
+          img {
+              width: 227px;
+              height: 53px;
+              margin-bottom: 40px;
+          }
+
+          p {
+              font: normal 400 14px/155% 'Poppins';
+              text-align: justify;
+              letter-spacing: 0.03em;
+              color: #000000;
+              opacity: 0.75;
+              
+          }
+
+          .social-media-link {
+              margin-top: 20px;
+              display: flex;
+              gap: 19px;
+
+              .share-link {
+                  width: 36px;
+                  height: 36.75px;
+                  border-radius: 50%;
+                  background-color: #000000;
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  transition: all 0.5s;
+
+                  i {
+                      color: #000000;
+                      transition: all 0.5s;
+                  }
+
+                  &:hover {
+                      transform: scale(1.18);
+                      transition: all 0.5s;
+                      filter: blur(2x);
+                      i {
+                          transform: scale(1.18);
+                          transition: all 0.5s;
+                      }
+                  }
+              }
+
+
+              .facebook:hover {
+                  background-color: #F1F1F1;
+                  box-shadow: 0 0 15px #4f65df;
+                  
+                  i {
+                      color: #4f65df;
+                  }
+              }
+
+              .instagram:hover {
+                  background-color: #F1F1F1;
+                  box-shadow: 0 0 15px #df2c2c;
+
+                  i {
+                      color: #df2c2c;
+                  }
+              }
+
+              .twitter:hover {
+                  background-color: #F1F1F1;
+                  box-shadow: 0 0 15px rgb(58, 58, 208);
+
+                  i {
+                      color: rgb(58, 58, 208);
+                  }
+              }
+
+              .linkedIn:hover {
+                  background-color: #F1F1F1;
+                  box-shadow: 0 0 15px rgb(63, 63, 177);
+
+                  i {
+                      color: rgb(63, 63, 177);
+                  }
+              }
+          }
+      }
+
+      .footer-content-head {
+          font: normal bold 20.2817px/30px 'Poppins';
+          color: #000000;
+          margin-bottom: 33px;
+          margin-top: 12px;
+      }
+
+      ul {
+          padding: 0;
+
+          li {
+              width: 120px;
+              margin-bottom: 8px;
+
+              a {
+                  text-decoration: none;
+
+                  span {
+                      color: #000000;
+                      font: normal 300 18.0282px/225% 'Poppins';
+                      opacity: 0.75;
+                  }
+              }
+          }
+
+      }
+
+      .share-content-four {
+          .row {
+              .col-12 {
+                  
+                  a {
+                      display: inline-block;
+                      font: normal 300 18.0282px/36px 'Poppins';
+                      color: #000000;
+                      opacity: 0.75;
+                      text-decoration: none;
+                  }
+              }
+          }
+      }
+  }
+
+  .line-5 {
+      margin: 80px 0 30px 0;
+      border: 1px solid #000000;
+      opacity: 0.12;
+  }
+
+  .footer-content-two {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+          display: inline-block;
+          font: normal 300 16px/24px 'Poppins';
+          color: #000000;
+          opacity: 0.75;
+      }
+
+      .shared-link-2 {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 0.12;
+
+          a {
+              font: normal 300 16px/36px 'Poppins';
+              text-decoration-line: underline;
+              color: #000000;
+              opacity: 0.75;
+          }
+      }
   }
 }
