@@ -1,0 +1,24 @@
+.trending-cards {
+  width: 250px;
+  margin: 10px 15px !important;
+}
+
+.container {
+  max-width: 2000px !important;
+}
+.form-group label:before {
+  border: 2px solid #0079bf;
+}
+.form-group {
+  .d-flex {
+    align-items: center;
+    justify-content: space-between;
+    button {
+      background-color: white;
+      padding-right: 15px;
+    }
+  }
+}
+.nav {
+  margin: 0;
+}
