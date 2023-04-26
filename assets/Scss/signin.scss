@@ -37,19 +37,27 @@
       }
 
       #email {
-        opacity: 0.702;
+       
         width: 351px;
         height: 50px;
         padding-left: 10px;
-        margin-bottom: 34px;
+        margin-bottom: 15px;
         border-radius: 3px;
         border: 1px solid #d8d8d8;
         outline-color: green;
         background-color: rgba(255, 255, 255, 0.7019607843137254);
       }
-
+#name{
+  width: 351px;
+        height: 50px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        border: 1px solid #d8d8d8;
+        outline-color: green;
+        background-color: rgba(255, 255, 255, 0.7019607843137254);
+}
       #password {
-        // opacity: 0.702;
         width: 351px;
         height: 50px;
         padding-left: 10px;
