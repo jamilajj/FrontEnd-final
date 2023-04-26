@@ -1,23 +1,35 @@
 .section1 {
+  padding: 0 0 60px 0;
   .container {
     .General {
-      opacity: 0.902;
-      width: 440px;
-      height: 520px;
+      .remember-me{
+        .checkbox-text{
+          transform: translate(-34px, 2px);
+        }
+      }
+      hr {
+        align-items: center;
+        width: 160px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      width: 450px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
       border-radius: 10px;
       background-color: #ffffff;
       filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      max-width: 350px;
       margin: auto;
 
       .input {
-        opacity: 0.8;
-        color: #4f4f4f;
+        color: #1a1919;
         font: bold 14px;
         letter-spacing: 2px;
         line-height: 28px;
@@ -37,7 +49,7 @@
       }
 
       #password {
-        opacity: 0.702;
+        // opacity: 0.702;
         width: 351px;
         height: 50px;
         padding-left: 10px;
@@ -47,70 +59,56 @@
         outline-color: green;
         background-color: rgba(255, 255, 255, 0.7019607843137254);
       }
+
       .remember-me {
-        position: relative;
-        #Checkbox {
-          width: 21px;
-          height: 21px;
-          border-radius: 100px;
-          background-color: #04a9f4;
-          position: absolute;
-          bottom: 4px;
-        }
-        .Checkbox-text {
-          margin-left: 30px;
-          font: bold 14px/28px;
+        display: flex;
+
+        .checkbox-text {
           color: #8b8b8b;
         }
 
         .forgot-link {
-          /* margin-left: 183px; */
-          color: #04a9f4;
-          font: bold 14px/28px;
-          text-align: right;
-          display: inline;
-          text-decoration: none;
-          position: absolute;
-          right: 5px;
+          color: #000000;
+          text-decoration: underline;
         }
       }
-      .sign-in-button {
+
+      .login-button {
         padding: 13px 144.5px;
-        margin: 23px 0 49px 0;
+        margin: 23px 0;
         border-radius: 5px;
-        background-color: #007bff;
+        background-color: #000000;
         color: #fff;
         font-weight: bold;
         font-size: 16px;
-        line-height: 28px;
-        display: inline-block;
+        line-height: 24px;
         text-decoration: none;
-        filter: drop-shadow(0px 3px 0px #0075aa);
       }
+
       .All-button {
         height: 36.4px;
-        position: relative;
+        display: flex;
+        flex-direction: column;
 
         .facebook-button {
-          padding: 9px 50px;
+          padding: 9px 90px;
+          margin: 10px 0;
           background-color: #3b5998;
           color: #fff;
           border-radius: 5px;
-          display: inline-block;
           text-decoration: none;
           font-weight: bold;
-          position: absolute;
-          left: 0;
+          // left: 0;
         }
-        .twitter-button {
-          padding: 9px 57.5px;
+
+        .google-button {
+          padding: 9px 90px;
+          margin: 10px 0;
           background-color: #1da1f2;
           color: #fff;
           border-radius: 5px;
           text-decoration: none;
           font-weight: bold;
-          display: inline-block;
-          position: absolute;
           right: 0;
         }
       }
@@ -130,8 +128,8 @@
   color: #6e6e6e;
 }
 
-.sign-in-button:hover {
-  background-color: #0069d9;
+.login-button:hover {
+  background-color: #eb15bc;
 }
 
 .facebook-button:hover {
@@ -140,4 +138,54 @@
 
 .twitter-button:hover {
   background-color: #0c8ddb;
+}
+
+.forgot-link:hover {
+  text-decoration: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  margin: 10px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -34px;
+  left: -60px;
+  right: 0;
+  bottom: 0;
+  background-color: #b9b9b9;
+  border-radius: 34px;
+  transition: .4s;
+  width: 50px;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 20px;
+  left: 4px;
+  bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.switch input:checked+.slider {
+  background-color: #000000;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(26px);
 }

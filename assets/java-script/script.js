@@ -16,7 +16,29 @@ $(document).ready(function () {
 })
 
 $(function () {
-
+// eye function==================================
+  function show() {
+    let p =document.getElementById('password');
+     p.setAttribute('type', 'text');
+   }
+   
+   function hide() {
+    let p = document.getElementById('password');
+     p.setAttribute('type', 'password');
+   }
+   
+   let pwShown = 0;
+   
+   document.getElementById("eye").addEventListener("click", function () {
+     if (pwShown == 0) {
+         pwShown = 1;
+         show();
+     } else {
+         pwShown = 0;
+         hide();
+     }
+   }, false);
+// first section slider=============================================
   $('.first_section_slider').slick({
     centerMode: true,
     centerPadding: '0px',
@@ -131,9 +153,7 @@ $(function () {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+     
     ]
   });
   
@@ -162,6 +182,10 @@ function activeTab(item) {
 
   document.querySelector("#" + content).classList.add("is-active");
   btnTarget.classList.add("is-active");
+}
+
+{
+  
 }
 
 

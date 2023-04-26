@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/Scss/main.style.css">
     <link rel="stylesheet" href="assets/Scss/signin.css">
+    <link rel="stylesheet" href="assets/Scss/checkout.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -608,30 +609,52 @@
 
         <!--//End drop down-->
     </header>
+    <section class="checkout_img">
+       
+        <div class="title_chck">
+            <p>explore</p>
+            <p style="font-size:larger">Checkout</p>
+        </div>
+       
+
+    </section>
     <div class="section1">
-            <div class="container">
-        <div class="General">
-          
+        <div class="container">
+            <div class="General">
+
                 <img src="./assets/img/home-img/logos.svg" alt="">
                 <p>Login with your email & password</p>
-                <form action="">
+                <form action="#">
                     <label for="email" class="input">Email</label>
-                    <input type="email" id="email"  required="required" />
+                    <input type="email" id="email" required="required" />
                     <label for="password" class="input">Password</label>
-                    <input type="password" id="password" required="required" minlength="3"
-                        maxlength="6" />
-                    <div class="remember-me">
-                        <input type="checkbox" id="Checkbox" />
-                        <label for="Checkbox" class="Checkbox-text">Remember me</label>
-                        <a href="" class="forgot-link">Forgot</a>
-                    </div>
-                    <a href="#" class="sign-in-button">SIGN IN</a>
+                    <input type="password" id="password" required="required" minlength="3" maxlength="6" />
+                    <!-- <span>
+                        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                     </span> -->
                 </form>
-                <div class="All-button">
-                    <a href="https://www.facebook.com/" target="_blank" class="facebook-button">Facebook</a>
-                    <a href="https://twitter.com/" target="_blank" class="twitter-button">Twitter</a>
+                <div class="remember-me">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <div><label for="Checkbox" class="checkbox-text">Remember me</label></div>
+                    <div> <a href="" class="forgot-link">Forgot Password?</a></div>
                 </div>
+                <a href="#" class="login-button">Login</a>
+                <div class="d-flex hr">
+                    <hr>Or
+                    <hr>
+                </div>
+
+                <div class="All-button">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook-button">Login With Facebook</a>
+                    <a href="https://google.com/" target="_blank" class="google-button">Login With Google</a>
+                </div>
+                <!-- <div class="register"><p>Don't have any account?</p> <a href="#">Register</a> </div> -->
             </div>
+
+
         </div>
 
     </div>
