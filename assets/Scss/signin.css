@@ -1,0 +1,184 @@
+.section1 .container .General {
+  opacity: 0.902;
+  width: 440px;
+  height: 520px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+          filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 350px;
+  margin: auto;
+}
+
+.section1 .container .General .input {
+  opacity: 0.8;
+  color: #4f4f4f;
+  font: bold 14px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.section1 .container .General #email {
+  opacity: 0.702;
+  width: 351px;
+  height: 50px;
+  padding-left: 10px;
+  margin-bottom: 34px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  outline-color: green;
+  background-color: rgba(255, 255, 255, 0.701961);
+}
+
+.section1 .container .General #password {
+  opacity: 0.702;
+  width: 351px;
+  height: 50px;
+  padding-left: 10px;
+  margin-bottom: 14px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  outline-color: green;
+  background-color: rgba(255, 255, 255, 0.701961);
+}
+
+.section1 .container .General .remember-me {
+  position: relative;
+}
+
+.section1 .container .General .remember-me #Checkbox {
+  width: 21px;
+  height: 21px;
+  border-radius: 100px;
+  background-color: #04a9f4;
+  position: absolute;
+  bottom: 4px;
+}
+
+.section1 .container .General .remember-me .Checkbox-text {
+  margin-left: 30px;
+  font: bold 14px/28px;
+  color: #8b8b8b;
+}
+
+.section1 .container .General .remember-me .forgot-link {
+  /* margin-left: 183px; */
+  color: #04a9f4;
+  font: bold 14px/28px;
+  text-align: right;
+  display: inline;
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+}
+
+.section1 .container .General .sign-in-button {
+  padding: 13px 144.5px;
+  margin: 23px 0 49px 0;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-filter: drop-shadow(0px 3px 0px #0075aa);
+          filter: drop-shadow(0px 3px 0px #0075aa);
+}
+
+.section1 .container .General .All-button {
+  height: 36.4px;
+  position: relative;
+}
+
+.section1 .container .General .All-button .facebook-button {
+  padding: 9px 50px;
+  background-color: #3b5998;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.section1 .container .General .All-button .twitter-button {
+  padding: 9px 57.5px;
+  background-color: #1da1f2;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+#email::-webkit-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#email:-ms-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#email::-ms-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#email::placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#password::-webkit-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password:-ms-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password::-ms-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password::placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+.sign-in-button:hover {
+  background-color: #0069d9;
+}
+
+.facebook-button:hover {
+  background-color: #2d4373;
+}
+
+.twitter-button:hover {
+  background-color: #0c8ddb;
+}
+/*# sourceMappingURL=signin.css.map */
