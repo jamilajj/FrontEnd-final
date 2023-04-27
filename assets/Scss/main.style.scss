@@ -20,20 +20,27 @@ header {
 
         .top_menu {
           ul {
+            margin-bottom: 0%;
             li {
+              display: inline;
+              margin-left: 15px;
+              
               a {
+                text-decoration: none;
+                color: black;
                 font-size: 20px;
               }
             }
           }
         }
 
-        form {
+       .top_search {
           position: relative;
 
-          label {
+         .search {
+          // position: absolute;
             i {
-              position: absolute;
+              // position: absolute;
               bottom: 30%;
             }
 
@@ -49,65 +56,48 @@ header {
             }
           }
         }
-      }
-
-      .top_menu {
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-
-        ul {
-          margin-bottom: 0%;
-
-          li {
-            display: inline;
-            margin-left: 15px;
-
+        .wishlist_basket {
+          display: flex;
+  
+          .wishlist_logo {
+            padding: 0 15px;
+  
             a {
               text-decoration: none;
               color: black;
-            }
-          }
-        }
-      }
-
-      .wishlist_basket {
-        display: flex;
-
-        .wishlist_logo {
-          padding: 0 15px;
-
-          a {
-            text-decoration: none;
-            color: black;
-
-            i {
-              font-size: 20px;
-
-              span {
-                font-size: 13px;
+  
+              i {
+                font-size: 20px;
+  
+                span {
+                  font-size: 13px;
+                }
               }
             }
           }
-        }
-
-        .basket_logo {
-          padding: 0 15px;
-
-          a {
-            text-decoration: none;
-            color: black;
-
-            i {
-              font-size: 20px;
-
-              span {
-                font-size: 13px;
+  
+          .basket_logo {
+            padding: 0 15px;
+  
+            a {
+              text-decoration: none;
+              color: black;
+  
+              i {
+                font-size: 20px;
+  
+                span {
+                  font-size: 13px;
+                }
               }
             }
           }
         }
       }
+
+      
+
+     
     }
   }
 
@@ -130,14 +120,14 @@ header {
   background-color: white;
 
   .container {
-    max-width: 1600px;
+    // max-width: 1600px;
 
     .slider {
-      width: 400px;
-      margin: 20px auto;
-      text-align: center;
-      padding: 20px;
-      color: #000;
+      // width: 400px;
+      // margin: 20px auto;
+      // text-align: center;
+      // padding: 20px;
+      // color: #000;
 
       .slick-prev:before,
       .slick-next:before {
@@ -146,22 +136,22 @@ header {
         color: #363131;
       }
 
-      .parent-slide {
-        padding: 15px;
-      }
+      // .parent-slide {
+      //   padding: 15px;
+      // }
 
-      img {
-        // width: 273px;
-        display: block;
-        margin: auto;
-      }
+      // img {
+      //   // width: 273px;
+      //   display: block;
+      //   margin: auto;
+      // }
     }
   }
 }
 
 .slider {
-  width: 100% !important;
-  margin: 20px auto;
+  // width: 100% !important;
+  // margin: 20px auto;
   text-align: center;
   padding: 20px;
   color: white;
@@ -448,6 +438,9 @@ body {
         border-radius: 5px;
         height: 56px;
         width: 407px;
+        input{
+          padding-top: 14px;
+        }
       }
     }
   }
@@ -478,7 +471,7 @@ footer {
               letter-spacing: 0.03em;
               color: #000000;
               opacity: 0.75;
-              
+
           }
 
           .social-media-link {
@@ -517,7 +510,7 @@ footer {
               .facebook:hover {
                   background-color: #F1F1F1;
                   box-shadow: 0 0 15px #4f65df;
-                  
+
                   i {
                       color: #4f65df;
                   }
@@ -582,7 +575,7 @@ footer {
       .share-content-four {
           .row {
               .col-12 {
-                  
+
                   a {
                       display: inline-block;
                       font: normal 300 18.0282px/36px 'Poppins';

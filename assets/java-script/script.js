@@ -16,67 +16,68 @@ $(document).ready(function () {
 })
 
 $(function () {
-// eye function==================================
+  // eye function==================================
   function show() {
-    let p =document.getElementById('password');
-     p.setAttribute('type', 'text');
-   }
-   
-   function hide() {
     let p = document.getElementById('password');
-     p.setAttribute('type', 'password');
-   }
-   
-   let pwShown = 0;
-   
-   document.getElementById("eye").addEventListener("click", function () {
-     if (pwShown == 0) {
-         pwShown = 1;
-         show();
-     } else {
-         pwShown = 0;
-         hide();
-     }
-   }, false);
-// first section slider=============================================
-  $('.first_section_slider').slick({
-    centerMode: true,
-    centerPadding: '0px',
-    slidesToShow: 1,
+    p.setAttribute('type', 'text');
+  }
+
+  function hide() {
+    let p = document.getElementById('password');
+    p.setAttribute('type', 'password');
+  }
+
+  let pwShown = 0;
+
+  document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+      pwShown = 1;
+      show();
+    } else {
+      pwShown = 0;
+      hide();
+    }
+  }, false);
+
+
+
+})
+// section2==========================================
+window.onload = function () {
+  $('.slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ]
-  });
-
-
-})
-window.onload = function () {
-  $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    centerMode: true,
-    slidesToShow: 4,
-    slidesToScroll: 1
   });
 };
 
@@ -153,10 +154,10 @@ $(function () {
           slidesToScroll: 1
         }
       }
-     
+
     ]
   });
-  
+
 
 });
 
@@ -183,10 +184,37 @@ function activeTab(item) {
   document.querySelector("#" + content).classList.add("is-active");
   btnTarget.classList.add("is-active");
 }
+// first section slider=============================================
+$(function () {
+  $('.first_section_slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
 
-{
-  
-}
+
+
 
 
 

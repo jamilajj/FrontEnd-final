@@ -69,7 +69,7 @@ a:focus {
 
 .exo-menu > li {
   display: inline-block;
-  float: left;
+  /* float: left; */
   background-color: #000000;
 }
 

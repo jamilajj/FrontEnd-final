@@ -1,29 +1,50 @@
 .section1 {
   padding: 0 0 60px 0;
 }
+
 .section1 .container .General {
   width: 450px;
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
   border-radius: 10px;
   background-color: #ffffff;
-  filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+          filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
   margin: auto;
 }
+
 .section1 .container .General .remember-me .checkbox-text {
-  transform: translate(-34px, 2px);
+  -webkit-transform: translate(-34px, 2px);
+          transform: translate(-34px, 2px);
 }
+
 .section1 .container .General hr {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 160px;
 }
+
 .section1 .container .General form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .section1 .container .General .input {
   color: #1a1919;
   font: bold 14px;
@@ -31,6 +52,7 @@
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .section1 .container .General #email {
   width: 351px;
   height: 50px;
@@ -39,8 +61,9 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
+
 .section1 .container .General #name {
   width: 351px;
   height: 50px;
@@ -49,8 +72,9 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
+
 .section1 .container .General #password {
   width: 351px;
   height: 50px;
@@ -59,18 +83,24 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
+
 .section1 .container .General .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .section1 .container .General .remember-me .checkbox-text {
   color: #8b8b8b;
 }
+
 .section1 .container .General .remember-me .forgot-link {
   color: #000000;
   text-decoration: underline;
 }
+
 .section1 .container .General .login-button {
   padding: 13px 144.5px;
   margin: 23px 0;
@@ -82,11 +112,18 @@
   line-height: 24px;
   text-decoration: none;
 }
+
 .section1 .container .General .All-button {
   height: 36.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .section1 .container .General .All-button .facebook-button {
   padding: 9px 90px;
   margin: 10px 0;
@@ -96,6 +133,7 @@
   text-decoration: none;
   font-weight: bold;
 }
+
 .section1 .container .General .All-button .google-button {
   padding: 9px 90px;
   margin: 10px 0;
@@ -107,7 +145,19 @@
   right: 0;
 }
 
-#email::-moz-placeholder {
+#email::-webkit-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#email:-ms-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
+#email::-ms-input-placeholder {
   opacity: 0.902;
   color: #555555;
   font: 300 18px;
@@ -119,7 +169,19 @@
   font: 300 18px;
 }
 
-#password::-moz-placeholder {
+#password::-webkit-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password:-ms-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password::-ms-input-placeholder {
   opacity: 0.902;
   font-size: 12px;
   color: #6e6e6e;
@@ -168,7 +230,8 @@
   bottom: 0;
   background-color: #b9b9b9;
   border-radius: 34px;
-  transition: 0.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
   width: 50px;
 }
 
@@ -179,9 +242,10 @@
   width: 20px;
   left: 4px;
   bottom: 8px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 50%;
-  transition: 0.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .switch input:checked + .slider {
@@ -189,5 +253,7 @@
 }
 
 .switch input:checked + .slider:before {
-  transform: translateX(26px);
-}/*# sourceMappingURL=signin.css.map */
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+/*# sourceMappingURL=signin.css.map */
