@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/Scss/main.style.css">
     <link rel="stylesheet" href="assets/Scss/signin.css">
     <link rel="stylesheet" href="assets/Scss/checkout.css">
+
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -619,7 +620,7 @@
         </div>
     </div>
 
-    <div class="section1">
+    <div class="signin_cl">
         <div class="container">
             <div class="General">
 
@@ -628,19 +629,19 @@
                 <form action="#">
                     <label for="email" class="input">Email</label>
                     <input type="email" id="email" required="required" />
-                    <label for="password" class="input">Password</label>
-                    <input type="password" id="password" required="required" minlength="3" maxlength="6" />
-                    <!-- <span>
-                        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-                     </span> -->
+                    <label for="txtPassword" class="input">Password</label>
+                    <div class="input-group" style="justify-content: space-between;">
+                       
+                        <input class="border" style="padding:11px;width: 305px;"
+                        type="password" id="txtPassword" name="txtPassword" required="required" />
+                        <button style="padding: 15px;" type="button" id="btnToggle" class="toggle"><i id="eyeIcon"
+                                class="fa fa-eye"></i></button>
+                    </div>
                 </form>
                 <div class="remember-me">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                    </label>
-                    <div><label for="Checkbox" class="checkbox-text">Remember me</label></div>
-                    <div> <a href="" class="forgot-link">Forgot Password?</a></div>
+                        <input type='checkbox' class='ios8-switch' id='checkbox-1'>
+                        <label for='checkbox-1'>Remember me</label>
+                    <div> <a id="open-popup" href="" class="forgot-link">Forgot Password?</a></div>
                 </div>
                 <a href="#" class="login-button">Login</a>
                 <div class="d-flex hr">
@@ -652,12 +653,38 @@
                     <a href="https://www.facebook.com/" target="_blank" class="facebook-button">Login With Facebook</a>
                     <a href="https://google.com/" target="_blank" class="google-button">Login With Google</a>
                 </div>
-                <!-- <div class="register"><p>Don't have any account?</p> <a href="#">Register</a> </div> -->
+                <div class="register"> <div> <p>Don't have any account? </p></div> <div><a id="open-popup-two" href="#">Register</a></div>  </div>
             </div>
-
-
+            <div id="popup">
+                    <div class="popup-content">
+                        <div class="container">
+                            <div class="icon">
+                                <i id="close-popup" class="fa-solid fa-x"></i>
+                            </div>
+                            <div class="logo">
+                                <img src="./assets/img/logo.svg" alt="">
+                            </div>
+                            <div class="text">
+                                <p> Login with your email & password</p>
+                            </div>
+                            <div class="message">
+                                <p class="email">Email</p>
+                                <input type="text" required="required" placeholder="" >
+                            </div>
+                            <div class="button">
+                                <button>Reset Password</button>
+                            </div>
+                            <div class="login-or">
+                                <hr>
+                                <p>OR</p>
+                            </div>
+                            <p>Back to <a style="color:black;text-decoration-line:underline;font-weight:bold;" href="register.html">register</a></p>
+            
+                        </div>
+                    </div>
+                </div>
         </div>
-
+        
     </div>
 
 
@@ -760,5 +787,6 @@
 
     </footer>
 </body>
-
+<script src="./assets/java-script/eye.js"></script>
+<script src="./assets/java-script/popup.js"></script>
 </html>

@@ -1,37 +1,122 @@
-.section1 {
+.signin_cl {
   padding: 0 0 60px 0;
 }
-.section1 .container .General {
+
+.signin_cl .container {
+  /* Style the close button */
+  /* two popup */
+  /* Style the close button */
+}
+
+.signin_cl .container .General {
   width: 450px;
-  height: 600px;
+  height: 730px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
   border-radius: 10px;
   background-color: #ffffff;
-  filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+          filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
   margin: auto;
 }
-.section1 .container .General .remember-me .checkbox-text {
-  transform: translate(-34px, 2px);
+
+.signin_cl .container .General .remember-me {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 13px;
+  width: 342px;
 }
-.section1 .container .General hr {
-  align-items: center;
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch {
+  position: absolute;
+  margin: 8px 0 0 16px;
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label {
+  position: relative;
+  padding: 0 0 0 50px;
+  line-height: 2em;
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:hover:after {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch:checked + label:after {
+  margin-left: 16px;
+}
+
+.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch:checked + label:before {
+  background: #55d069;
+}
+
+.signin_cl .container .General hr {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 160px;
 }
-.section1 .container .General form {
+
+.signin_cl .container .General form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.section1 .container .General .input {
+
+.signin_cl .container .General .input {
   color: #1a1919;
   font: bold 14px;
   letter-spacing: 2px;
   line-height: 28px;
   text-transform: uppercase;
 }
-.section1 .container .General #email {
+
+.signin_cl .container .General #email {
   width: 351px;
   height: 50px;
   padding-left: 10px;
@@ -39,9 +124,10 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
-.section1 .container .General #name {
+
+.signin_cl .container .General #name {
   width: 351px;
   height: 50px;
   padding-left: 10px;
@@ -49,9 +135,10 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
-.section1 .container .General #password {
+
+.signin_cl .container .General #password {
   width: 351px;
   height: 50px;
   padding-left: 10px;
@@ -59,19 +146,29 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.701961);
 }
-.section1 .container .General .remember-me {
+
+.signin_cl .container .General .field-icon {
+  margin-left: 315px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.signin_cl .container .General .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-.section1 .container .General .remember-me .checkbox-text {
-  color: #8b8b8b;
-}
-.section1 .container .General .remember-me .forgot-link {
+
+.signin_cl .container .General .remember-me .forgot-link {
   color: #000000;
   text-decoration: underline;
 }
-.section1 .container .General .login-button {
+
+.signin_cl .container .General .login-button {
   padding: 13px 144.5px;
   margin: 23px 0;
   border-radius: 5px;
@@ -82,12 +179,19 @@
   line-height: 24px;
   text-decoration: none;
 }
-.section1 .container .General .All-button {
+
+.signin_cl .container .General .All-button {
   height: 36.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.section1 .container .General .All-button .facebook-button {
+
+.signin_cl .container .General .All-button .facebook-button {
   padding: 9px 90px;
   margin: 10px 0;
   background-color: #3b5998;
@@ -96,7 +200,8 @@
   text-decoration: none;
   font-weight: bold;
 }
-.section1 .container .General .All-button .google-button {
+
+.signin_cl .container .General .All-button .google-button {
   padding: 9px 90px;
   margin: 10px 0;
   background-color: #1da1f2;
@@ -107,7 +212,145 @@
   right: 0;
 }
 
-#email::-moz-placeholder {
+.signin_cl .container .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 105px;
+}
+
+.signin_cl .container .register a {
+  color: black;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-weight: bold;
+}
+
+.signin_cl .container #popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.signin_cl .container #popup .popup-content .container .message input {
+  color: #000;
+  padding-left: 91%;
+  height: 50px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #edecec;
+}
+
+.signin_cl .container .popup-content .logo {
+  padding-left: 6%;
+}
+
+.signin_cl .container .popup-content .container {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  margin: 180px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.signin_cl .container #close-popup {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  position: relative;
+  padding-left: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.signin_cl .container .button button {
+  background-color: #000;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 7%;
+  color: #fff;
+  width: 325px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 7%;
+  color: #fff;
+  width: 325px;
+  height: 50px;
+}
+
+.signin_cl .container #popup-two {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.signin_cl .container #popup-two .popup-content-two .container .message input {
+  color: #000;
+  padding-left: 91%;
+  height: 50px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #edecec;
+}
+
+.signin_cl .container #popup-two .popup-content-two .logo img {
+  position: relative;
+  padding-right: 250px;
+}
+
+.signin_cl .container #popup-two .popup-content-two .text {
+  position: relative;
+  padding-right: 35px;
+}
+
+.signin_cl .container #popup-two .popup-content-two fieldset .mail {
+  position: relative;
+  margin-right: 220px;
+}
+
+.signin_cl .container .popup-content-two .logo {
+  padding-left: 6%;
+}
+
+.signin_cl .container .popup-content-two .container {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.signin_cl .container #close-popup-two {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  position: relative;
+  padding-left: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#email::-webkit-input-placeholder {
   opacity: 0.902;
   color: #555555;
   font: 300 18px;
@@ -119,19 +362,31 @@
   font: 300 18px;
 }
 
+#email::-ms-input-placeholder {
+  opacity: 0.902;
+  color: #555555;
+  font: 300 18px;
+}
+
 #email::placeholder {
   opacity: 0.902;
   color: #555555;
   font: 300 18px;
 }
 
-#password::-moz-placeholder {
+#password::-webkit-input-placeholder {
   opacity: 0.902;
   font-size: 12px;
   color: #6e6e6e;
 }
 
 #password:-ms-input-placeholder {
+  opacity: 0.902;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+#password::-ms-input-placeholder {
   opacity: 0.902;
   font-size: 12px;
   color: #6e6e6e;
@@ -158,48 +413,4 @@
 .forgot-link:hover {
   text-decoration: none;
 }
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 10px;
-  margin: 10px;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: -34px;
-  left: -60px;
-  right: 0;
-  bottom: 0;
-  background-color: #b9b9b9;
-  border-radius: 34px;
-  transition: 0.4s;
-  width: 50px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 20px;
-  left: 4px;
-  bottom: 8px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  transition: 0.4s;
-}
-
-.switch input:checked + .slider {
-  background-color: #000000;
-}
-
-.switch input:checked + .slider:before {
-  transform: translateX(26px);
-}/*# sourceMappingURL=signin.css.map */
+/*# sourceMappingURL=signin.css.map */
