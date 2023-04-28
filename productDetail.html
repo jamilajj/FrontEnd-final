@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/slick/slick.css">
+  <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/Scss/star.css">
   <link rel="stylesheet" href="assets/Scss/product.css">
 </head>
 
@@ -12,7 +20,7 @@
   <section class="productCard">
     <div class="container">
       <div class="info">
-        <h3 class="name">Maniac Red Boys</h3>
+        <p class="price">Maniac Red Boys</p>
         <p>Children’s clothing/ kids wear is usually more casual than adult clothing, fit play and rest. Hosiery is
           usually used. More recently, however, tons of childrenswear is heavily influenced by trends in adult fashion
         </p>
@@ -32,10 +40,10 @@
           <div class="attrib color">
             <p class="header">Color</p>
             <div class="options">
-              <div class="option" style="color: #60aec1;"></div>
-              <div class="option" style="color: #ef525e;"></div>
-              <div class="option" style="color: #000000;"></div>
-              <div class="option" style="color: #b216f0;"></div>
+              <div class="option" style="background-color: #60aec1;"></div>
+              <div class="option" style="background-color: #ef525e;"></div>
+              <div class="option" style="background-color: #000000;"></div>
+              <div class="option" style="background-color: #b216f0;"></div>
             </div>
           </div>
         </div>
@@ -47,69 +55,119 @@
         <p><span>Category:</span>kids</p>
         <p><span>Tags:</span>Casual,Cotton,Red</p>
         <hr>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+
+        <!-- Example Code -->
+
+        <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Product Details
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and
+                Chat . We try to reply quickly, so you need not to wait too long for a response!.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Additional Information
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Please read the documentation carefully . We also have some online video tutorials regarding this issue
+                . If the problem remains, Please Open a ticket in the support forum
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Customer Reviews
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                At first, Please check your internet connection . We also have some online video tutorials regarding
+                this issue . If the problem remains, Please Open a ticket in the support forum.
+                <div class="rating">
+                  <div id="full-stars-example">
+                    <div class="rating-group">
+                      <p>Your Rating *</p>
+                      <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                          class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                      <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                          class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                      <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                          class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                      <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                          class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                      <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                          class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                    </div>
+
+                  </div>
+
+                  <p class="desc" style="margin-bottom: 2rem; font-family: sans-serif; font-size:0.9rem">
+                </div>
+                <div class="row">
+                  <div class="col-12 ">
+                    <div>
+                      <p>Message *</p> <input type="text-area" name="" id="">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="">
+                      <p>Name *</p> <input type="text" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="">
+                      <p>Email *</p> <input type="email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox_black d-flex">
+                  <input type="checkbox" name="" id="">
+                  <p>Save my name, email,in this browser for the next time I comment.</p>
+                </div>
+                <div class="buttons">
+                  <div class="button">Submit</div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
+
+        <!-- End Example Code -->
+
       </div>
-      <div class="colorLayer"></div>
-      <div class="preview">
-        <h1 class="brand">Fila</h1>
-        <div class="imgs">
-          <img class="activ"
-            src="https://firebasestorage.googleapis.com/v0/b/fotos-3cba1.appspot.com/o/tenis%2Ffila%2Ft2.png?alt=media&token=f481e143-1e6f-43fd-8ba5-66bb593d8486"
-            alt="img 1">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/fotos-3cba1.appspot.com/o/tenis%2Ffila%2Ft3.png?alt=media&token=b2352ce3-be90-411d-b112-cfc6453760a0"
-            alt="img 2">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/fotos-3cba1.appspot.com/o/tenis%2Ffila%2Ft1.png?alt=media&token=9b161cad-8068-418e-a0d3-ee2e0975e6f4"
-            alt="img 3">
-        </div>
-        <div class="zoomControl"></div>
-        <div class="closePreview"></div>
-        <div class="movControls">
-          <div class="movControl left"></div>
-          <div class="movControl right"></div>
-        </div>
-      </div>
-    </div>
   </section>
+
+
+
+
 </body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/java-script/product.js"></script>
+<script src="assets/java-script/product_option_click.js"></script>
 
 </html>

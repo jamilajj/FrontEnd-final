@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
 @mixin flex($dir: row, $wrap: nowrap, $ai: center, $jc: center, $ac: center) {
   display: flex;
   flex-direction: $dir;
@@ -7,24 +8,30 @@
   justify-content: $jc;
   align-content: $ac;
 }
+
 @mixin imagen($url: "", $size: cover, $posicion: center, $repeat: no-repeat, $parallax: false) {
-  @if $url != "" {
+  @if $url !="" {
     background-image: url($url);
   }
+
   background-size: $size;
   background-position: $posicion;
   background-repeat: $repeat;
-  @if $parallax == true {
+
+  @if $parallax ==true {
     background-attachment: fixed;
   }
 }
+
 body {
   overflow-x: hidden;
   // background-color: #000;
   margin: 0 auto;
+
   * {
     font-family: Arial, sans-serif;
   }
+
   p,
   h1,
   h2,
@@ -34,10 +41,12 @@ body {
   h6 {
     margin: 0;
   }
+
   a {
     color: #666;
     text-decoration: none;
   }
+
   ul,
   li {
     padding: 0;
@@ -56,27 +65,33 @@ body {
   min-height: 100vh;
   position: relative;
   perspective: 100px;
+
   &.morph {
     .container {
       .colorLayer {
         width: 70%;
         transform: none;
         transition-delay: 0s;
+
         &:after {
           opacity: 1;
           transition-delay: 0.2s;
         }
       }
+
       .preview {
         width: 70%;
+
         .brand {
           top: 50px;
         }
+
         .zoomControl {
           opacity: 0;
           pointer-events: none;
           transition-delay: 0s;
         }
+
         .closePreview {
           opacity: 1;
           pointer-events: all;
@@ -85,30 +100,37 @@ body {
       }
     }
   }
+
   .container {
     width: 90%;
     margin: 0 auto;
     padding: 50px;
     background-color: #fff;
     box-sizing: border-box;
+
     .info {
       width: calc(50% - 50px);
+
       .name {
         color: darkgray;
         font-size: 16px;
         text-transform: uppercase;
       }
+
       .slogan {
         margin: 10px 0;
         font-size: 30px;
       }
+
       .price {
         font-size: 25px;
         font-weight: 900;
       }
+
       .attribs {
         .attrib {
           margin-top: 40px;
+
           &.size {
             .options {
               .option {
@@ -120,6 +142,7 @@ body {
               }
             }
           }
+
           &.color {
             .options {
               .option {
@@ -127,6 +150,7 @@ body {
                 height: 25px;
                 position: relative;
                 border: 3px solid currentColor;
+
                 &:before {
                   content: "";
                   position: absolute;
@@ -137,6 +161,7 @@ body {
                   transform: scale(0);
                   transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all 0.3s;
                 }
+
                 &.activ {
                   &:before {
                     transform: scale(1);
@@ -145,36 +170,44 @@ body {
               }
             }
           }
+
           .header {
             margin-bottom: 10px;
             color: darkgray;
             font-weight: 600;
           }
+
           .options {
             @include flex(row, wrap, $jc: flex-start);
+
             .option {
               @include flex;
-              width: 35px;
-              height: 35px;
+              width: 40px;
+              height: 40px;
               margin: 10px 10px 0 0;
               font-size: 14px;
               font-weight: 600;
-              color: darkgray;
+              color: rgb(224, 224, 224);
               border-radius: 5px;
               border: 1px solid darkgray;
               cursor: pointer;
               user-select: none;
               transition: ease all 0.3s;
+
               &:hover {
                 box-shadow: 0 5px 10px 0 rgba(#000, 0.2);
+                border: 2px solid black;
               }
+              
             }
           }
         }
       }
+
       .buttons {
         @include flex(row, wrap, $jc: flex-start);
         margin-top: 50px;
+
         .button {
           margin: 20px 20px 0 0;
           min-width: 120px;
@@ -189,16 +222,27 @@ body {
           user-select: none;
           cursor: pointer;
           transition: ease all 0.3s;
+
           &:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 10px 0 rgba(#000, 0.5);
           }
+
           &.colored {
             background-color: #ff5263;
           }
         }
       }
+
+      .accordion {
+        #collapseThree{
+          #half-stars-example{
+            
+          }
+        }
+      }
     }
+
     .colorLayer {
       position: absolute;
       top: 0;
@@ -210,6 +254,7 @@ body {
       transform-origin: right;
       perspective: 100px;
       transition: ease all 0.3s 0.2s;
+
       &:after {
         content: "";
         position: absolute;
@@ -222,6 +267,7 @@ body {
         transition: ease all 0.3s;
       }
     }
+
     .preview {
       @include flex;
       position: absolute;
@@ -232,6 +278,7 @@ body {
       user-select: none;
       overflow: hidden;
       transition: ease all 0.3s;
+
       .brand {
         position: absolute;
         top: 150px;
@@ -244,10 +291,12 @@ body {
         overflow: hidden;
         transition: ease all 0.3s;
       }
+
       .imgs {
         @include flex;
         width: 100%;
         height: 100%;
+
         img {
           position: absolute;
           top: 0;
@@ -258,12 +307,14 @@ body {
           opacity: 0;
           pointer-events: none;
           transition: ease all 0.3s;
+
           &.activ {
             opacity: 1;
             transform: none;
           }
         }
       }
+
       .zoomControl {
         @include flex;
         position: absolute;
@@ -274,11 +325,13 @@ body {
         background-color: rgba(#000, 0.3);
         cursor: pointer;
         transition: ease all 0.3s 0.5s;
+
         &:before,
         &:after {
           content: "";
           position: absolute;
         }
+
         &:before {
           top: 20%;
           left: 20%;
@@ -287,6 +340,7 @@ body {
           border-radius: 50%;
           border: 2px solid #fff;
         }
+
         &:after {
           bottom: 20%;
           right: 20%;
@@ -297,6 +351,7 @@ body {
           transform-origin: bottom left;
         }
       }
+
       .closePreview {
         @include flex;
         position: absolute;
@@ -308,6 +363,7 @@ body {
         cursor: pointer;
         pointer-events: none;
         transition: ease all 0.3s;
+
         &:before,
         &:after {
           content: "";
@@ -317,14 +373,17 @@ body {
           background-color: #fff;
           transform: rotate(45deg);
         }
+
         &:after {
           transform: rotate(-45deg);
         }
       }
+
       .movControls {
         @include flex(row);
         position: absolute;
         bottom: 150px;
+
         .movControl {
           @include flex($jc: flex-end);
           width: 40px;
@@ -332,9 +391,11 @@ body {
           margin: 0 15px;
           position: relative;
           cursor: pointer;
+
           &.left {
             transform: rotateY(180deg);
           }
+
           &:before {
             content: "";
             position: absolute;
@@ -343,6 +404,7 @@ body {
             height: 2px;
             background-color: #fff;
           }
+
           &:after {
             content: "";
             width: 10px;
@@ -364,6 +426,7 @@ body {
       cursor: default !important;
     }
   }
+
   .productCard {
     &.morph {
       .container {
@@ -373,36 +436,44 @@ body {
         }
       }
     }
+
     .container {
       width: 100%;
+
       .info {
         width: 100%;
         margin-bottom: 450px;
         text-align: center;
+
         .attribs {
           .attrib {
             .options {
               justify-content: center;
+
               .option {
                 margin: 10px;
               }
             }
           }
         }
+
         .buttons {
           justify-content: center;
           margin-top: 10px;
+
           .button {
             margin: 20px;
           }
         }
       }
+
       .colorLayer {
         top: auto;
         bottom: 0;
         width: 100%;
         height: 300px;
         transform: none;
+
         &:after {
           top: -20vh;
           right: 0;
@@ -413,11 +484,13 @@ body {
     }
   }
 }
+
 @media only screen and (max-width: 500px) {
   .productCard {
     .container {
       .info {
         margin-bottom: 300px;
+
         .buttons {
           .button {
             width: 100%;
@@ -425,11 +498,14 @@ body {
           }
         }
       }
+
       .colorLayer {
         height: 200px;
       }
+
       .preview {
         height: 250px;
+
         .brand {
           height: 150px;
           font-size: 150px;

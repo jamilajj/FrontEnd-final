@@ -1,54 +1,38 @@
 .signin_cl {
   padding: 0 0 60px 0;
 }
-
 .signin_cl .container {
   /* Style the close button */
   /* two popup */
   /* Style the close button */
 }
-
 .signin_cl .container .General {
   width: 450px;
   height: 730px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
   border-radius: 10px;
   background-color: #ffffff;
-  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
-          filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+  filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
   margin: auto;
 }
-
 .signin_cl .container .General .remember-me {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 13px;
   width: 342px;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch {
   position: absolute;
   margin: 8px 0 0 16px;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch + label {
   position: relative;
   padding: 0 0 0 50px;
   line-height: 2em;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:before {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch + label:before {
   content: "";
   position: absolute;
   display: block;
@@ -59,11 +43,9 @@
   border-radius: 16px;
   background: #fff;
   border: 1px solid #d9d9d9;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:after {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch + label:after {
   content: "";
   position: absolute;
   display: block;
@@ -74,40 +56,25 @@
   border-radius: 16px;
   background: #fff;
   border: 1px solid #d9d9d9;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch + label:hover:after {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch + label:hover:after {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch:checked + label:after {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch:checked + label:after {
   margin-left: 16px;
 }
-
-.signin_cl .container .General .remember-me input[type="checkbox"].ios8-switch:checked + label:before {
+.signin_cl .container .General .remember-me input[type=checkbox].ios8-switch:checked + label:before {
   background: #55d069;
 }
-
 .signin_cl .container .General hr {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 160px;
 }
-
 .signin_cl .container .General form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .signin_cl .container .General .input {
   color: #1a1919;
   font: bold 14px;
@@ -115,7 +82,6 @@
   line-height: 28px;
   text-transform: uppercase;
 }
-
 .signin_cl .container .General #email {
   width: 351px;
   height: 50px;
@@ -124,9 +90,8 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.701961);
+  background-color: rgba(255, 255, 255, 0.7019607843);
 }
-
 .signin_cl .container .General #name {
   width: 351px;
   height: 50px;
@@ -135,9 +100,8 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.701961);
+  background-color: rgba(255, 255, 255, 0.7019607843);
 }
-
 .signin_cl .container .General #password {
   width: 351px;
   height: 50px;
@@ -146,9 +110,8 @@
   border-radius: 3px;
   border: 1px solid #d8d8d8;
   outline-color: green;
-  background-color: rgba(255, 255, 255, 0.701961);
+  background-color: rgba(255, 255, 255, 0.7019607843);
 }
-
 .signin_cl .container .General .field-icon {
   margin-left: 315px;
   margin-top: -25px;
@@ -156,18 +119,13 @@
   z-index: 2;
   background-color: #fff;
 }
-
 .signin_cl .container .General .remember-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .signin_cl .container .General .remember-me .forgot-link {
   color: #000000;
   text-decoration: underline;
 }
-
 .signin_cl .container .General .login-button {
   padding: 13px 144.5px;
   margin: 23px 0;
@@ -179,18 +137,11 @@
   line-height: 24px;
   text-decoration: none;
 }
-
 .signin_cl .container .General .All-button {
   height: 36.4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .signin_cl .container .General .All-button .facebook-button {
   padding: 9px 90px;
   margin: 10px 0;
@@ -200,7 +151,6 @@
   text-decoration: none;
   font-weight: bold;
 }
-
 .signin_cl .container .General .All-button .google-button {
   padding: 9px 90px;
   margin: 10px 0;
@@ -211,21 +161,15 @@
   font-weight: bold;
   right: 0;
 }
-
 .signin_cl .container .register {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 105px;
 }
-
 .signin_cl .container .register a {
   color: black;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   font-weight: bold;
 }
-
 .signin_cl .container #popup {
   display: none;
   position: fixed;
@@ -237,7 +181,6 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .signin_cl .container #popup .popup-content .container .message input {
   color: #000;
   padding-left: 91%;
@@ -247,22 +190,18 @@
   border-radius: 5px 5px 5px 5px;
   background-color: #edecec;
 }
-
 .signin_cl .container .popup-content .logo {
   padding-left: 6%;
 }
-
 .signin_cl .container .popup-content .container {
   background-color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   max-width: 400px;
   margin: 180px auto;
   padding: 20px;
   text-align: center;
 }
-
 .signin_cl .container #close-popup {
   background-color: #ffffff;
   color: black;
@@ -272,7 +211,6 @@
   border-radius: 50%;
   cursor: pointer;
 }
-
 .signin_cl .container .button button {
   background-color: #000;
   border-radius: 5px 5px 5px 5px;
@@ -287,7 +225,6 @@
   width: 325px;
   height: 50px;
 }
-
 .signin_cl .container #popup-two {
   display: none;
   position: fixed;
@@ -299,7 +236,6 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .signin_cl .container #popup-two .popup-content-two .container .message input {
   color: #000;
   padding-left: 91%;
@@ -309,37 +245,30 @@
   border-radius: 5px 5px 5px 5px;
   background-color: #edecec;
 }
-
 .signin_cl .container #popup-two .popup-content-two .logo img {
   position: relative;
   padding-right: 250px;
 }
-
 .signin_cl .container #popup-two .popup-content-two .text {
   position: relative;
   padding-right: 35px;
 }
-
 .signin_cl .container #popup-two .popup-content-two fieldset .mail {
   position: relative;
   margin-right: 220px;
 }
-
 .signin_cl .container .popup-content-two .logo {
   padding-left: 6%;
 }
-
 .signin_cl .container .popup-content-two .container {
   background-color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
 }
-
 .signin_cl .container #close-popup-two {
   background-color: #ffffff;
   color: black;
@@ -350,19 +279,7 @@
   cursor: pointer;
 }
 
-#email::-webkit-input-placeholder {
-  opacity: 0.902;
-  color: #555555;
-  font: 300 18px;
-}
-
-#email:-ms-input-placeholder {
-  opacity: 0.902;
-  color: #555555;
-  font: 300 18px;
-}
-
-#email::-ms-input-placeholder {
+#email::-moz-placeholder {
   opacity: 0.902;
   color: #555555;
   font: 300 18px;
@@ -374,19 +291,7 @@
   font: 300 18px;
 }
 
-#password::-webkit-input-placeholder {
-  opacity: 0.902;
-  font-size: 12px;
-  color: #6e6e6e;
-}
-
-#password:-ms-input-placeholder {
-  opacity: 0.902;
-  font-size: 12px;
-  color: #6e6e6e;
-}
-
-#password::-ms-input-placeholder {
+#password::-moz-placeholder {
   opacity: 0.902;
   font-size: 12px;
   color: #6e6e6e;
@@ -412,5 +317,4 @@
 
 .forgot-link:hover {
   text-decoration: none;
-}
-/*# sourceMappingURL=signin.css.map */
+}/*# sourceMappingURL=signin.css.map */
