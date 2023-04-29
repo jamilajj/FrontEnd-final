@@ -492,23 +492,23 @@ footer .line-5 {
   border: 1px solid #000000;
   opacity: 0.12;
 }
-footer .footer-content-two {
+footer .footer-end {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .footer-content-two span {
+footer .footer-end span {
   display: inline-block;
   font: normal 300 16px/24px "Poppins";
   color: #000000;
   opacity: 0.75;
 }
-footer .footer-content-two .shared-link-2 {
+footer .footer-end .shared-link-2 {
   display: flex;
   justify-content: space-between;
   flex-grow: 0.12;
 }
-footer .footer-content-two .shared-link-2 a {
+footer .footer-end .shared-link-2 a {
   font: normal 300 16px/36px "Poppins";
   text-decoration-line: underline;
   color: #000000;

@@ -29,9 +29,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-1 ">
-                        <div class="logo">
-                            <img src="assets/img/home-img/logos.svg" alt="logo">
-                        </div>
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="assets/img/home-img/logos.svg" alt="logo">
+                            </div>
+                        </a>
                     </div>
                     <div class="col-4">
                         <div class="top_menu">
@@ -46,10 +48,8 @@
                     <div class="col-5">
                         <form action="#" class="top_search">
                             <label for="search" class="search">
-                                <i class="fas fa-search search"></i>
-
-                                <input type="input " id="search" placeholder="        Search  Anything..."
-                                    class=" border-0 inp">
+                                <span class="position-absolute"><i class="fas fa-search search"></i></span>
+                                <input type="input" id="search" placeholder="Search Anything..." class=" border-0 inp">
                             </label>
                         </form>
 
@@ -72,7 +72,6 @@
             <hr>
         </div>
         <!-- ================================================================================================== -->
-
 
         <div class="nav">
 
@@ -279,7 +278,7 @@
                 </li>
             </ul>
             <ul class="menu">
-                <li class="menu_li"><a class="active-nav"></a>Demos</a><i class="fa-solid fa-chevron-down fa-xs iconn"
+                <li class="menu_li"><a href="">Demos</a><i class="fa-solid fa-chevron-down fa-xs iconn"
                         style="color: #68696a;"></i>
                     <ul class="nav-li">
                         <a href="#">
@@ -305,9 +304,8 @@
                         </a>
                     </ul>
                 </li>
-
-                <li class="menu_li"><a class="active-nav"></a>Men Wear</a><i
-                        class="fa-solid fa-chevron-down fa-xs iconn" style="color: #68696a;"></i>
+                <li class="menu_li"><a href="">Man Wear</a><i class="fa-solid fa-chevron-down fa-xs iconn"
+                        style="color: #68696a;"></i>
                     <div class="hovver">
                         <div class="row">
                             <div class="col-3">
@@ -439,10 +437,6 @@
 
                     </div>
                 </li>
-
-
-
-
                 <li class="menu_li"> <a href="">Woman Wear</a> <i class="fa-solid fa-chevron-down fa-xs iconn"
                         style="color: #68696a;"></i>
                     <div class="hovver hovver_second">
@@ -576,8 +570,8 @@
 
                     </div>
                 </li>
-                <li> <a href="">Search</a>
-                <li><a href="">Shops</a></li>
+                <li class="menu_li"> <a href="">Search</a></li>
+                <li class="menu_li"><a href="">Shops</a></li>
                 <li class="menu_li"> <a href="">Pages</a> <i class="fa-solid fa-chevron-down fa-xs iconn"
                         style="color: #68696a;"></i>
                     <ul class="nav-li">
@@ -605,6 +599,24 @@
                     </ul>
                 </li>
             </ul>
+            <div class="d-flex lang_login_btn">
+
+
+                <div class="language-btn ">
+                    <div class="language-picker js-language-picker border" data-trigger-class="btn btn--subtle">
+                        <form action="" class="language-picker__form">
+
+                            <select name="language-picker-select" id="language-picker-select">
+                                <option lang="de" value="deutsch"> <img src="assets/img/home-img/germany.png" alt="">
+                                    Deutsch-DE</option>
+                                <option lang="en" value="english" selected>English-EN</option>
+                                <option lang="fr" value="francais">Français-FR</option>
+                                <option lang="it" value="italiano">Italiano-IT</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--//End drop down-->
@@ -770,10 +782,26 @@
 
                     </div>
                 </div>
-               
+
             </div>
         </div>
+        <hr>
 
+        <div class="container">
+            <div class="footer-end">
+                <p>Copyright © 2023 REDQ All rights reserved</p>
+                <div>
+                    <img class="foot_img" src="./assets/img/footer/jcb.svg" alt="">
+                    <img class="foot_img" src="./assets/img/footer/mastercard.svg" alt="">
+                    <img class="foot_img" src="./assets/img/footer/paypal.svg" alt="">
+                    <img class="foot_img" src="./assets/img/footer/skrill.svg" alt="">
+                    <img class="foot_img" src="./assets/img/footer/visa.svg" alt="">
+                </div>
+                <div> <a style="color:black " href="#">scroll to top </a><i class="fa-regular fa-arrow-up-from-line"
+                        style="color: #000000;"></i></div>
+
+            </div>
+        </div>
     </footer>
 </body>
 </html>

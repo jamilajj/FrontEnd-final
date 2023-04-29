@@ -1,0 +1,159 @@
+#popup_index {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $background-color_1;
+    .popup-content {
+      .container {
+        .message {
+          input {
+            color: $color_2;
+            padding-left: 91%;
+            height: 50px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px 5px 5px 5px;
+            background-color: $background-color_4;
+          }
+        }
+      }
+    }
+  }
+  .popup-content {
+    .logo {
+      padding-left: 6%;
+    }
+    .container {
+      background-color: $background-color_2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      margin: 180px auto;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  #close-popup_index {
+    background-color: $background-color_3;
+    color: $color_1;
+    border: none;
+    position: relative;
+    padding-left: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .button {
+    button {
+      background-color: $background-color_5;
+      border-radius: 5px 5px 5px 5px;
+      margin-top: 7%;
+      color: $color_3;
+      width: 325px;
+      height: 50px;
+      background-color: $background-color_5;
+      border-radius: 5px 5px 5px 5px;
+      margin-top: 7%;
+      color: $color_3;
+      width: 325px;
+      height: 50px;
+    }
+  }
+  #popup-two_index {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $background-color_1;
+    .popup-content-two {
+      .container {
+        .message {
+          input {
+            color: $color_2;
+            padding-left: 91%;
+            height: 50px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px 5px 5px 5px;
+            background-color: $background-color_4;
+          }
+        }
+      }
+      .logo {
+        img {
+          position: relative;
+          padding-right: 250px;
+        }
+      }
+      .text {
+        position: relative;
+        padding-right: 35px;
+      }
+      fieldset {
+        .mail {
+          position: relative;
+          margin-right: 220px;
+        }
+      }
+    }
+  }
+  .popup-content-two {
+    .logo {
+      padding-left: 6%;
+    }
+    .container {
+      background-color: $background-color_2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  #close-popup-two {
+    background-color: $background-color_3;
+    color: $color_1;
+    border: none;
+    position: relative;
+    padding-left: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+#email::placeholder {
+opacity: 0.902;
+color: #555555;
+font: 300 18px;
+}
+
+#password::placeholder {
+opacity: 0.902;
+font-size: 12px;
+color: #6e6e6e;
+}
+
+.login-button:hover {
+background-color: #eb15bc;
+}
+
+.facebook-button:hover {
+background-color: #2d4373;
+}
+
+.twitter-button:hover {
+background-color: #0c8ddb;
+}
+
+.forgot-link:hover {
+text-decoration: none;
+}
